@@ -1,19 +1,15 @@
 from tkinter import *
-# fields = 'Höhe', 'Böschungswinkel'
-import math
 import os
 import datetime
 import xlsxwriter
 
 
 def button_action():
-    # size = [] #list for check what size it was before
-    # size_after = [] #list for check what size it was after
-    root_src_dir = eingabefeld.get()
+    root_src_dir = eingabefeld.get() #Input
     workbook = xlsxwriter.Workbook(f"{root_src_dir}\\Planliste.xlsx")
     worksheet = workbook.add_worksheet("Inhaltsverzeichnis")
     cell_format = workbook.add_format({'bold': True})
-    cell_format2 = workbook.add_format({'bold': True, 'font_size': '14'})
+    cell_format2 = workbook.add_format({'bold': True, 'font_size': '14'}) #Headings of the Cells
     worksheet.write(f'B1', "Bezeichnung", cell_format2)
     worksheet.write(f'C1', "Ablegedatum", cell_format2)
     n = 2
@@ -45,7 +41,7 @@ def button_action():
 # Ein Fenster erstellen
 fenster = Tk()
 # Fenstertitel erstellen
-fenster.title("Inhaltsverzeichnis")
+fenster.title("InoCo")
 
 # Fenster stellen
 my_label = Label(fenster, text="Kopiere den Pfad hier rein", padx=120)
