@@ -1,5 +1,4 @@
 from tkinter import *
-# fields = 'Höhe', 'Böschungswinkel'
 import math
 import os
 import datetime
