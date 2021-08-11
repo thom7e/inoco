@@ -1,5 +1,5 @@
 # inoco
-INdex Of COntents of any Directory incl. Subdirectories
+Index Of Contents of any Directory incl. Subdirectories
 
 ## READ ME ##
 
